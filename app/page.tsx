@@ -14,7 +14,7 @@ export default function Home() {
               Thai Kim Huong (Hazel)
             </h1>
             <p className="max-w-[700px] text-xl md:text-2xl animate-fade-in-up animation-delay-400">
-              Fresher Frontend Developer
+              Frontend Developer
             </p>
             <div className="flex space-x-4 mt-6 animate-fade-in-up animation-delay-600">
               <Link href="/about#contact">
@@ -67,7 +67,7 @@ export default function Home() {
         <div className="container px-4 md:px-6 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8">Welcome to My Portfolio</h2>
           <p className="max-w-[800px] mx-auto text-muted-foreground md:text-xl mb-12">
-            I'm a passionate frontend developer and Computer Science student, eager to create innovative and
+            I'm a passionate frontend developer, eager to create innovative and
             user-friendly web experiences. Explore my journey and projects below!
           </p>
           <div className="grid md:grid-cols-3 gap-8">
