@@ -125,7 +125,7 @@ export default function AboutPage() {
                 <CardTitle>Frontend Master</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="font-medium">CFD Circle</p>
+                <p className="font-medium">CFD Circle Course</p>
                 <p className="text-muted-foreground">6/2023 - 11/2023</p>
               </CardContent>
             </Card>
