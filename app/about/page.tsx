@@ -9,7 +9,6 @@ export default function AboutPage() {
         <div className="container px-4 md:px-6">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center">About Me</h1>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold mb-4">Bio</h2>
             <p className="text-muted-foreground mb-6">
               I am a senior Computer Science student at Ton Duc Thang University, skilled in HTML5, CSS, JavaScript, and
               Tailwind CSS. I've worked with React on projects and have a basic understanding of TypeScript and Next.js.

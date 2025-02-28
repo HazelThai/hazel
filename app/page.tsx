@@ -14,7 +14,7 @@ export default function Home() {
               Thai Kim Huong (Hazel)
             </h1>
             <p className="max-w-[700px] text-xl md:text-2xl animate-fade-in-up animation-delay-400">
-              Fresher Frontend Developer | Computer Science Student
+              Fresher Frontend Developer
             </p>
             <div className="flex space-x-4 mt-6 animate-fade-in-up animation-delay-600">
               <Link href="/about#contact">
