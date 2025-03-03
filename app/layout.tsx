@@ -5,6 +5,7 @@ import "./globals.css"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { MobileNav } from "@/components/mobile-nav"
+import { NavLink } from "@/components/nav-link"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   title: "Hazel Thai | Frontend Developer Portfolio",
   description:
     "Personal portfolio website showcasing my projects, skills, and experience as a fresher frontend developer",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -25,14 +26,13 @@ export default function RootLayout({
       <body className={cn(inter.className, "min-h-screen bg-background font-sans antialiased")}>
         <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
           <div className="container flex h-14 items-center">
-            <Link href="/" className="font-bold text-xl mr-6">
+            <Link href="/" className="font-bold text-xl mr-6 text-[#004bad]">
               HT
             </Link>
             <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
               <NavLink href="/">Home</NavLink>
               <NavLink href="/about">About</NavLink>
               <NavLink href="/projects">Projects</NavLink>
-              <NavLink href="/skills">Skills</NavLink>
               <NavLink href="/experience">Experience</NavLink>
             </nav>
             <MobileNav />
@@ -49,7 +49,6 @@ export default function RootLayout({
                 <NavLink href="/">Home</NavLink>
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/projects">Projects</NavLink>
-                <NavLink href="/skills">Skills</NavLink>
                 <NavLink href="/experience">Experience</NavLink>
               </nav>
             </div>
@@ -60,14 +59,3 @@ export default function RootLayout({
   )
 }
 
-function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <Link href={href} className="transition-colors hover:text-primary">
-      {children}
-    </Link>
-  )
-}
-
-
-
-import './globals.css'

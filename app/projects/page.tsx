@@ -6,7 +6,7 @@ export default function ProjectsPage() {
       {/* Projects Section */}
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">My Projects</h1>
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center text-[#004bad]">My Projects</h1>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard
               title="Luxestate Landing Page"

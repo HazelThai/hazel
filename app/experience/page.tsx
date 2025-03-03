@@ -5,7 +5,7 @@ export default function ExperiencePage() {
     <div className="min-h-screen bg-background">
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center text-[#004bad]">
             Work Experience
           </h1>
 

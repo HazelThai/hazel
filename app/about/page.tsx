@@ -1,13 +1,13 @@
-import { Mail, Github, MapPin, Phone, Gamepad, Music, Coffee, Camera, Sun, BookOpen } from "lucide-react"
+import { Mail, Github, MapPin, Phone, Gamepad, Music, Coffee, Camera, Sun, BookOpen, Server, Code, PenToolIcon as Tool } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-background">
       {/* About Me Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-26">
         <div className="container px-4 md:px-6">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center">About Me</h1>
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center text-[#004bad]">About Me</h1>
           <div className="max-w-3xl mx-auto">
             <p className="text-muted-foreground mb-6">
               I am a senior Computer Science student at Ton Duc Thang University, skilled in HTML5, CSS, JavaScript, and
@@ -25,11 +25,110 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Hobbies Section */}
-      <section className="py-16 md:py-24 bg-muted/50">
+      {/* Skills  */}
+      <section className="py-10 md:py-16">
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">Hobbies & Interests</h2>
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center text-[#004bad]">Skills</h1>
+
+          <div className="max-w-4xl mx-auto">
+            <Card className="mb-8">
+              <CardHeader>
+                <CardTitle className="flex items-center">
+                  <Code className="mr-2 h-5 w-5" />
+                  Frontend Development
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "HTML5",
+                    "CSS / SCSS",
+                    "JavaScript (ES6)",
+                    "React",
+                    "Tailwind CSS",
+                    "TypeScript",
+                    "Next.js",
+                    "Redux Toolkit",
+                  ].map((skill) => (
+                    <span key={skill} className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="mb-8">
+              <CardHeader>
+                <CardTitle className="flex items-center">
+                  <Server className="mr-2 h-5 w-5" />
+                  Backend Development
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {["Node.js", "Express.js", "RESTful APIs", "MongoDB"].map((skill) => (
+                    <span key={skill} className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center">
+                  <Tool className="mr-2 h-5 w-5" />
+                  Tools & Others
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {["Git", "Ant Design", "Material UI", "Figma", "Photoshop"].map((skill) => (
+                    <span key={skill} className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+      {/* Education Section */}
+      <section className="py-10 md:py-16">
+        <div className="container px-4 md:px-6">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center text-[#004bad]">Education</h2>
+          <div className="max-w-3xl mx-auto">
+            <Card className="mb-8">
+              <CardHeader>
+                <CardTitle>Computer Science</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                  <p className="font-medium">Ton Duc Thang University</p>
+                  <p className="text-muted-foreground">2021 - Present</p>
+                </div>
+                <p className="font-medium mt-2">GPA: 7.33</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Frontend Master Course</CardTitle>
+              </CardHeader>
+              <CardContent style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <p className="font-medium">CFD Circle</p>
+                <p className="text-muted-foreground">6/2023 - 11/2023</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section >
+      {/* Hobbies Section */}
+      <section className="py-10 md:py-16 bg-muted/50">
+        <div className="container px-4 md:px-6">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center text-[#004bad]">Hobbies & Interests</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <Card className="card-hover">
               <CardHeader>
@@ -104,39 +203,10 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Education Section */}
-      <section className="py-16 md:py-24">
-        <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">Education</h2>
-          <div className="max-w-3xl mx-auto">
-            <Card className="mb-8">
-              <CardHeader>
-                <CardTitle>Computer Science</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="font-medium">Ton Duc Thang University</p>
-                <p className="text-muted-foreground">2021 - Present</p>
-                <p className="font-medium mt-2">GPA: 7.33</p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Frontend Master</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="font-medium">CFD Circle Course</p>
-                <p className="text-muted-foreground">6/2023 - 11/2023</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Information */}
-      <section id="contact" className="py-16 md:py-24 bg-muted/50">
+      <section className="py-10 md:py-16 bg-muted/50" >
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">Contact Information</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center text-[#004bad]">Contact Information</h2>
           <div className="max-w-3xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="card-hover">
@@ -181,8 +251,8 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   )
 }
 

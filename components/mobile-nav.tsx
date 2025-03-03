@@ -30,14 +30,8 @@ export function MobileNav() {
           <MobileNavLink href="/projects" onNavigate={() => setOpen(false)}>
             Projects
           </MobileNavLink>
-          <MobileNavLink href="/skills" onNavigate={() => setOpen(false)}>
-            Skills
-          </MobileNavLink>
           <MobileNavLink href="/experience" onNavigate={() => setOpen(false)}>
             Experience
-          </MobileNavLink>
-          <MobileNavLink href="/about#contact" onNavigate={() => setOpen(false)}>
-            Contact
           </MobileNavLink>
         </div>
       </SheetContent>
