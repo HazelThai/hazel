@@ -18,7 +18,7 @@ export default function ProjectsPage() {
                 "Successfully deployed on GitHub.",
               ]}
               technologies={["HTML5 (BEM)", "CSS", "Grunt"]}
-              imageUrl="/placeholder.svg?height=200&width=300"
+              imageUrl="/luxestate.png"
               projectUrl="https://hazelthai.github.io/Luxestate/"
             />
             <ProjectCard
@@ -30,8 +30,8 @@ export default function ProjectsPage() {
                 "Implemented interactive features with JavaScript, enhancing user experience.",
                 "Successfully deployed on GitHub.",
               ]}
-              technologies={["HTML5 (BEM)", "SCSS", "JavaScript", "Grunt"]}
-              imageUrl="/placeholder.svg?height=200&width=300"
+              technologies={["HTML5 (BEM)", "SCSS", "JavaScript", "Grunt", "Responsive Design"]}
+              imageUrl="/wooder.png"
               projectUrl="https://hazelthai.github.io/Wooder/"
             />
             <ProjectCard
@@ -43,8 +43,8 @@ export default function ProjectsPage() {
                 "Integrated interactive elements for better user engagement.",
                 "Successfully deployed on GitHub.",
               ]}
-              technologies={["HTML5 (BEM)", "SCSS", "JavaScript", "Grunt"]}
-              imageUrl="/placeholder.svg?height=200&width=300"
+              technologies={["HTML5 (BEM)", "SCSS", "JavaScript", "Grunt", "Responsive Design"]}
+              imageUrl="/finance.png"
               projectUrl="https://hazelthai.github.io/Finance/"
             />
             <ProjectCard

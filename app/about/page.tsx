@@ -1,5 +1,19 @@
-import { Mail, Github, MapPin, Phone, Gamepad, Music, Coffee, Camera, Sun, BookOpen, Server, Code, PenToolIcon as Tool } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import {
+  Mail,
+  Github,
+  MapPin,
+  Phone,
+  Gamepad,
+  Music,
+  Coffee,
+  Camera,
+  Sun,
+  BookOpen,
+  Server,
+  Code,
+  PenToolIcon as Tool,
+} from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function AboutPage() {
   return (
@@ -7,20 +21,26 @@ export default function AboutPage() {
       {/* About Me Section */}
       <section className="py-10 md:py-26">
         <div className="container px-4 md:px-6">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center text-[#004bad]">About Me</h1>
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center text-[#004bad]">
+            About Me
+          </h1>
           <div className="max-w-3xl mx-auto">
             <p className="text-muted-foreground mb-6">
-              I am a senior Computer Science student at Ton Duc Thang University, skilled in HTML5, CSS, JavaScript, and
-              Tailwind CSS. I've worked with React on projects and have a basic understanding of TypeScript and Next.js.
-              I'm eager to apply my skills and creativity to frontend development projects.
+              I am a senior Computer Science student at Ton Duc Thang
+              University, skilled in HTML5, CSS, JavaScript, and Tailwind CSS.
+              I've worked with React, TypeScript and Next.js on projects. I'm
+              eager to apply my skills and creativity to frontend development
+              projects.
             </p>
             <p className="text-muted-foreground mb-6">
-              Currently, I'm working as a Fresher Frontend Developer at Inflow, where I'm gaining valuable experience in
-              programming and developing websites and web portals.
+              Currently, I'm working as a Fresher Frontend Developer at Inflow,
+              where I'm gaining valuable experience in programming and
+              developing websites and web portals.
             </p>
             <p className="text-muted-foreground">
-              I'm passionate about creating user-friendly and visually appealing web interfaces. My goal is to
-              contribute to innovative projects and continue growing as a frontend developer.
+              I'm passionate about creating user-friendly and visually appealing
+              web interfaces. My goal is to contribute to innovative projects
+              and continue growing as a frontend developer.
             </p>
           </div>
         </div>
@@ -28,7 +48,9 @@ export default function AboutPage() {
       {/* Skills  */}
       <section className="py-10 md:py-16">
         <div className="container px-4 md:px-6">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center text-[#004bad]">Skills</h1>
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center text-[#004bad]">
+            Skills
+          </h1>
 
           <div className="max-w-4xl mx-auto">
             <Card className="mb-8">
@@ -50,7 +72,10 @@ export default function AboutPage() {
                     "Next.js",
                     "Redux Toolkit",
                   ].map((skill) => (
-                    <span key={skill} className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">
+                    <span
+                      key={skill}
+                      className="bg-primary/10 text-[#004bad] px-3 py-1 rounded-full text-sm"
+                    >
                       {skill}
                     </span>
                   ))}
@@ -67,11 +92,16 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  {["Node.js", "Express.js", "RESTful APIs", "MongoDB"].map((skill) => (
-                    <span key={skill} className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">
-                      {skill}
-                    </span>
-                  ))}
+                  {["Node.js", "Express.js", "RESTful APIs", "MongoDB"].map(
+                    (skill) => (
+                      <span
+                        key={skill}
+                        className="bg-primary/10 text-[#004bad] px-3 py-1 rounded-full text-sm"
+                      >
+                        {skill}
+                      </span>
+                    )
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -85,8 +115,28 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  {["Git", "Ant Design", "Material UI", "Figma", "Photoshop"].map((skill) => (
-                    <span key={skill} className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">
+                  {[
+                    "Git",
+                    "Ant Design",
+                    "Material UI",
+                    "shadcn / ui",
+                    "Figma",
+                    "Photoshop",
+                    "Responsive Design",
+                    "SEO Optimization",
+                    "Teamwork",
+                    "Leadership",
+                    "Communication",
+                    "Problem Solving",
+                    "Time Management",
+                    "Adaptability",
+                    "Proactivity",
+                    "Quick Learner",
+                  ].map((skill) => (
+                    <span
+                      key={skill}
+                      className="bg-primary/10 text-[#004bad] px-3 py-1 rounded-full text-sm"
+                    >
                       {skill}
                     </span>
                   ))}
@@ -99,14 +149,18 @@ export default function AboutPage() {
       {/* Education Section */}
       <section className="py-10 md:py-16">
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center text-[#004bad]">Education</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center text-[#004bad]">
+            Education
+          </h2>
           <div className="max-w-4xl mx-auto">
             <Card className="mb-8 ">
               <CardHeader>
                 <CardTitle>Computer Science</CardTitle>
               </CardHeader>
               <CardContent>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <div
+                  style={{ display: "flex", justifyContent: "space-between" }}
+                >
                   <p className="font-medium">Ton Duc Thang University</p>
                   <p className="text-muted-foreground">2021 - Present</p>
                 </div>
@@ -117,18 +171,22 @@ export default function AboutPage() {
               <CardHeader>
                 <CardTitle>Frontend Master Course</CardTitle>
               </CardHeader>
-              <CardContent style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <CardContent
+                style={{ display: "flex", justifyContent: "space-between" }}
+              >
                 <p className="font-medium">CFD Circle</p>
                 <p className="text-muted-foreground">6/2023 - 11/2023</p>
               </CardContent>
             </Card>
           </div>
         </div>
-      </section >
+      </section>
       {/* Hobbies Section */}
       <section className="py-10 md:py-16 bg-muted/50">
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center text-[#004bad]">Hobbies & Interests</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center text-[#004bad]">
+            Hobbies & Interests
+          </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <Card className="card-hover">
               <CardHeader>
@@ -138,7 +196,9 @@ export default function AboutPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">Enjoying various video games in my free time</p>
+                <p className="text-muted-foreground">
+                  Enjoying various video games in my free time
+                </p>
               </CardContent>
             </Card>
             <Card className="card-hover">
@@ -149,7 +209,9 @@ export default function AboutPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">Exploring different genres and artists</p>
+                <p className="text-muted-foreground">
+                  Exploring different genres and artists
+                </p>
               </CardContent>
             </Card>
             <Card className="card-hover">
@@ -160,7 +222,9 @@ export default function AboutPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">Exploring local cafes and enjoying different brews</p>
+                <p className="text-muted-foreground">
+                  Exploring local cafes and enjoying different brews
+                </p>
               </CardContent>
             </Card>
             <Card className="card-hover">
@@ -172,7 +236,8 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Capturing beautiful moments, especially sky, sunsets, and sunrises
+                  Capturing beautiful moments, especially sky, sunsets, and
+                  sunrises
                 </p>
               </CardContent>
             </Card>
@@ -184,7 +249,9 @@ export default function AboutPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">Enjoying various sports and outdoor adventures</p>
+                <p className="text-muted-foreground">
+                  Enjoying various sports and outdoor adventures
+                </p>
               </CardContent>
             </Card>
             <Card className="card-hover">
@@ -196,7 +263,8 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Enjoying studying new topics through online courses on Udemy, YouTube, and other platforms
+                  Enjoying studying new topics through online courses on Udemy,
+                  YouTube, and other platforms
                 </p>
               </CardContent>
             </Card>
@@ -204,16 +272,21 @@ export default function AboutPage() {
         </div>
       </section>
       {/* Contact Information */}
-      <section className="py-10 md:py-16 bg-muted/50" >
+      <section className="py-10 md:py-16 bg-muted/50">
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center text-[#004bad]">Contact Information</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center text-[#004bad]">
+            Contact Information
+          </h2>
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="card-hover">
                 <CardContent className="flex flex-col items-center p-6">
                   <Mail className="h-10 w-10 text-primary mb-4" />
                   <h3 className="text-xl font-bold mb-2">Email</h3>
-                  <a href="mailto:hazelthai.fw@gmail.com" className="text-center hover:text-primary transition-colors">
+                  <a
+                    href="mailto:hazelthai.fw@gmail.com"
+                    className="text-center hover:text-primary transition-colors"
+                  >
                     hazelthai.fw@gmail.com
                   </a>
                 </CardContent>
@@ -222,7 +295,10 @@ export default function AboutPage() {
                 <CardContent className="flex flex-col items-center p-6">
                   <Phone className="h-10 w-10 text-primary mb-4" />
                   <h3 className="text-xl font-bold mb-2">Phone</h3>
-                  <a href="tel:+84339759574" className="text-center hover:text-primary transition-colors">
+                  <a
+                    href="tel:+84339759574"
+                    className="text-center hover:text-primary transition-colors"
+                  >
                     0339 759 574
                   </a>
                 </CardContent>
@@ -251,8 +327,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section >
-    </div >
-  )
+      </section>
+    </div>
+  );
 }
-
