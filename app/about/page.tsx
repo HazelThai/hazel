@@ -164,7 +164,7 @@ export default function AboutPage() {
                   <p className="font-medium">Ton Duc Thang University</p>
                   <p className="text-muted-foreground">2021 - Present</p>
                 </div>
-                <p className="font-medium mt-2">GPA: 7.33</p>
+                <p className="font-medium mt-2">GPA: 7.41</p>
               </CardContent>
             </Card>
             <Card>
@@ -187,7 +187,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center text-[#004bad]">
             Hobbies & Interests
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
             <Card className="card-hover">
               <CardHeader>
                 <CardTitle className="flex items-center">
@@ -217,19 +217,6 @@ export default function AboutPage() {
             <Card className="card-hover">
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <Coffee className="mr-2 h-5 w-5" />
-                  Coffee Shop Visits
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Exploring local cafes and enjoying different brews
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="card-hover">
-              <CardHeader>
-                <CardTitle className="flex items-center">
                   <Camera className="mr-2 h-5 w-5" />
                   Photography
                 </CardTitle>
@@ -238,19 +225,6 @@ export default function AboutPage() {
                 <p className="text-muted-foreground">
                   Capturing beautiful moments, especially sky, sunsets, and
                   sunrises
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="card-hover">
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <Sun className="mr-2 h-5 w-5" />
-                  Outdoor Activities
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Enjoying various sports and outdoor adventures
                 </p>
               </CardContent>
             </Card>

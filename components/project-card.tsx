@@ -1,17 +1,25 @@
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Calendar, User, Award, ExternalLink } from "lucide-react"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Calendar, User, Award, ExternalLink } from "lucide-react";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 interface ProjectCardProps {
-  title: string
-  duration: string
-  role: string
-  achievements: string[]
-  technologies: string[]
-  imageUrl: string
-  projectUrl?: string
+  title: string;
+  duration: string;
+  role: string;
+  achievements: string[];
+  technologies: string[];
+  imageUrl: string;
+  projectUrl?: string;
+  refactoring?: boolean;
 }
 
 export default function ProjectCard({
@@ -22,11 +30,17 @@ export default function ProjectCard({
   technologies,
   imageUrl,
   projectUrl,
+  refactoring,
 }: ProjectCardProps) {
   return (
     <Card className="overflow-hidden flex flex-col h-full">
       <div className="relative h-48 w-full">
-        <Image src={imageUrl || "/placeholder.svg"} alt={title} fill className="object-cover" />
+        <Image
+          src={imageUrl || "/placeholder.svg"}
+          alt={title}
+          fill
+          className="object-cover"
+        />
       </div>
       <CardHeader>
         <CardTitle>{title}</CardTitle>
@@ -62,7 +76,13 @@ export default function ProjectCard({
         </div>
       </CardContent>
       {projectUrl && (
-        <CardFooter>
+        <CardFooter className="flex flex-col items-center gap-2">
+          {refactoring && (
+            <p className="text-muted-foreground italic text-[14px] text-center">
+              I'm currently refactoring this version — a new and improved one is
+              coming soon!
+            </p>
+          )}
           <Button variant="outline" size="sm" className="w-full" asChild>
             <a href={projectUrl} target="_blank" rel="noopener noreferrer">
               View Project <ExternalLink className="ml-2 h-4 w-4" />
@@ -71,6 +91,5 @@ export default function ProjectCard({
         </CardFooter>
       )}
     </Card>
-  )
+  );
 }
-

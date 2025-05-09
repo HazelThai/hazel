@@ -74,6 +74,7 @@ export default function ProjectsPage() {
               technologies={["HTML5", "CSS", "ReactJS", "Ant Design", "Node.js", "Express.js", "MongoDB"]}
               imageUrl="/placeholder.svg?height=200&width=300"
               projectUrl="https://github.com/HazelThai/FE-SOA"
+              refactoring={true}
             />
             <ProjectCard
               title="Manage Training Point System"
@@ -88,6 +89,7 @@ export default function ProjectsPage() {
               technologies={["HTML5", "CSS", "ReactJS", "Ant Design", "Node.js", "Express.js", "MongoDB"]}
               imageUrl="/placeholder.svg?height=200&width=300"
               projectUrl="https://github.com/HazelThai/FE-MTPS"
+              refactoring={true}
             />
           </div>
         </div>
